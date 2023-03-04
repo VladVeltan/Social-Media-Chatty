@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab4final.controllers.LogIn">
+   <children>
+      <ImageView fitHeight="210.0" fitWidth="309.0" layoutX="139.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      </ImageView>
+      <TextField fx:id="email" layoutX="369.0" layoutY="187.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="207.0" promptText="Email" />
+      <PasswordField fx:id="parola" layoutX="369.0" layoutY="232.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="207.0" promptText="Parola" />
+      <Button fx:id="logIn" layoutX="441.0" layoutY="282.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #0589ff;" text="Log In">
+         <effect>
+            <Glow />
+         </effect></Button>
+      <Button layoutX="417.0" layoutY="323.0" mnemonicParsing="false" onAction="#onClickCreateAccount" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #0589ff;" text="CreateAccount">
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <Label fx:id="label" layoutX="33.0" layoutY="350.0" prefHeight="18.0" prefWidth="322.0" />
+      <Text layoutX="93.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chatty">
+         <font>
+            <Font size="58.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <AnchorPane prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #0598ff;">
+         <children>
+            <Text layoutX="84.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chatty">
+               <font>
+                  <Font size="58.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

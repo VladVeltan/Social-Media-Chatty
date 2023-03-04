@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab4final.controllers.UserAccount">
+    <TableView fx:id="tableView" layoutX="14.0" layoutY="186.0" prefHeight="200.0" prefWidth="304.0" style="-fx-background-color: #0589ff;">
+      <columns>
+          <TableColumn fx:id="Prenume" prefWidth="102.4000244140625" text="Prenume" />
+          <TableColumn fx:id="Nume" prefWidth="98.39996337890625" text="Nume" />
+          <TableColumn fx:id="Email" prefWidth="103.20001220703125" text="Email" />
+      </columns>
+    </TableView>
+    <ImageView fitHeight="183.0" fitWidth="195.0" layoutX="74.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+          <Image url="@../../../images/user.jpeg" />
+        </image>
+    </ImageView>
+    <Button fx:id="myFriends" layoutX="332.0" layoutY="222.0" mnemonicParsing="false" onMouseClicked="#showMyFriends" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #0589ff;" text="My Friends" />
+    <Button fx:id="myUnfriends" layoutX="332.0" layoutY="273.0" mnemonicParsing="false" onMouseClicked="#showMyUnfriends" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #0589ff;" text="Search for friends" />
+    <Button fx:id="myRequests" layoutX="332.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#showRequests" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: #0589ff;" text="Requests" />
+   <Button fx:id="buttonAddFriend" layoutX="463.0" layoutY="273.0" mnemonicParsing="false" onMouseClicked="#addFriend" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #0589ff;" text="Add friend" />
+    <Button fx:id="buttonDeleteFriend" layoutX="463.0" layoutY="222.0" mnemonicParsing="false" onMouseClicked="#deleteFriend" prefHeight="26.0" prefWidth="100.0" style="-fx-background-color: #0589ff;" text="Remove" />
+    <Label fx:id="label" layoutX="14.0" layoutY="334.0" prefHeight="18.0" prefWidth="193.0" />
+   <Button fx:id="buttonRequestDeclined" layoutX="524.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#setButtonRequestDecline" style="-fx-background-color: #0589ff;" text="Decline" />
+   <Button fx:id="buttonRequestAccepted" layoutX="460.0" layoutY="330.0" mnemonicParsing="false" onMouseClicked="#setButtonRequestAccepted" style="-fx-background-color: #0589ff;" text="Accept" />
+   <Text layoutX="359.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chatty">
+      <font>
+         <Font size="58.0" />
+      </font>
+      <fill>
+         <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </fill>
+   </Text>
+</AnchorPane>
